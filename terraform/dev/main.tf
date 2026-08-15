@@ -46,7 +46,7 @@ locals {
 
 resource "aws_instance" "ec2_01" {
   ami           = data.aws_ssm_parameter.al2023.value
-  instance_type = "t3.nano"
+  instance_type = "t3.small"
   subnet_id     = local.subnet_by_az["us-east-1b"]
 
   metadata_options {
