@@ -28,8 +28,8 @@ spec:
           # Recursos fixos no proprio deployment (caracteristica do app-01).
           resources:
             requests:
-              cpu: 100m
-              memory: 128Mi
+              cpu: 60m
+              memory: 64Mi
             limits:
-              cpu: 250m
-              memory: 256Mi
+              cpu: 150m
+              memory: 128Mi

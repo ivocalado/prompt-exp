@@ -22,12 +22,5 @@ output "instances" {
       az            = aws_instance.ec2_03.availability_zone
       private_ip    = aws_instance.ec2_03.private_ip
     }
-    ec2_04 = {
-      id            = aws_instance.ec2_04.id
-      name          = aws_instance.ec2_04.tags["Name"]
-      instance_type = aws_instance.ec2_04.instance_type
-      az            = aws_instance.ec2_04.availability_zone
-      private_ip    = aws_instance.ec2_04.private_ip
-    }
   }
 }
