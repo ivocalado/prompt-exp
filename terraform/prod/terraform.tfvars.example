@@ -1,0 +1,2 @@
+# Copie para terraform.tfvars e ajuste. terraform.tfvars nao e versionado.
+aws_profile = "<seu-perfil-aws>"
