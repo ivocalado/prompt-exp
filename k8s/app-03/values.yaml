@@ -1,0 +1,26 @@
+image:
+  repository: nginx
+  tag: "1.27-alpine"
+  pullPolicy: IfNotPresent
+
+# Recursos externalizados: os templates apenas referenciam estes valores,
+# permitindo sobrescrever por ambiente com -f ou --set.
+web:
+  replicaCount: 3
+  resources:
+    requests:
+      cpu: 150m
+      memory: 192Mi
+    limits:
+      cpu: 400m
+      memory: 384Mi
+
+scheduler:
+  replicaCount: 1
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      cpu: 150m
+      memory: 128Mi

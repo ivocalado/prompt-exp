@@ -1,0 +1,6 @@
+apiVersion: v2
+name: app-01
+description: Chart do app-01. Requests e limits ficam fixos nos proprios deployments.
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

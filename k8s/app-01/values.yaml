@@ -1,0 +1,14 @@
+# Neste chart os recursos NAO sao configuraveis por values: cada deployment
+# declara requests e limits diretamente no seu proprio template.
+# Ver app-02 e app-03 para a variante com recursos externalizados.
+
+image:
+  repository: nginx
+  tag: "1.27-alpine"
+  pullPolicy: IfNotPresent
+
+api:
+  replicaCount: 2
+
+worker:
+  replicaCount: 1

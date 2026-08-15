@@ -1,0 +1,44 @@
+# --- Terraform ---
+# State: contem dados sensiveis em texto plano, nunca versionar.
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+
+# Arquivos de variaveis carregam configuracao de ambiente (perfil AWS etc.).
+# Apenas os .example, com placeholders, sao versionados.
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Config de backend: bloco backend nao aceita variaveis, entao o perfil
+# fica aqui e entra via -backend-config.
+backend.hcl
+!backend.hcl.example
+
+# Planos salvos incluem valores resolvidos do state.
+*.tfplan
+tfplan
+plan.out
+
+# Overrides locais
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# --- Helm ---
+charts/*.tgz
+**/charts/*.tgz
+**/Chart.lock
+
+# --- Credenciais / diversos ---
+.env
+*.pem
+*.key
+.DS_Store

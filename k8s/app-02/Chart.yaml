@@ -1,0 +1,6 @@
+apiVersion: v2
+name: app-02
+description: Chart do app-02. Requests e limits sao externalizados em values.yaml.
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

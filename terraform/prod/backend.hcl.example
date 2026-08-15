@@ -1,0 +1,5 @@
+# Copie para backend.hcl e ajuste. backend.hcl nao e versionado.
+#
+# Uso:
+#   terraform init -backend-config=backend.hcl
+profile = "<seu-perfil-aws>"
