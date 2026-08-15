@@ -10,10 +10,10 @@ web:
   resources:
     requests:
       cpu: 150m
-      memory: 192Mi
+      memory: 96Mi
     limits:
       cpu: 400m
-      memory: 384Mi
+      memory: 192Mi
 
 scheduler:
   replicaCount: 1
