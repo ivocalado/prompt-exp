@@ -74,21 +74,6 @@ resource "aws_instance" "ec2_02" {
   }
 }
 
-resource "aws_instance" "ec2_03" {
-  ami           = data.aws_ssm_parameter.al2023.value
-  instance_type = "t3.nano"
-  subnet_id     = local.subnet_by_az["us-east-1f"]
-
-  metadata_options {
-    http_tokens   = "required"
-    http_endpoint = "enabled"
-  }
-
-  tags = {
-    Name = "dev-ec2-03"
-  }
-}
-
 resource "aws_instance" "ec2_04" {
   ami           = data.aws_ssm_parameter.al2023.value
   instance_type = "t3.nano"
